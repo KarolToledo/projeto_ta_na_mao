@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: rgb(159, 165, 242);
+}
+
+header {
+    font-size: 10px;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: #4b4bbd;
+    height: 8vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.card {
+    position: relative;
+    height: 170px;
+    width: 170px;
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card .flip {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .flip {
+    transform: rotateY(180deg);
+}
+
+.front-card, .back-card {
+    position: absolute;
+    backface-visibility: hidden; 
+}
+
+.back-card {
+    transform: rotateY(180deg);
+    padding: 20px;
+    border: 5px solid rgb(125, 63, 202);
+    border-radius: 15px;
+    background-color: rgb(139, 79, 249);
+    color: white;
+}
+
+h1 {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.front-card img, .back-card img {
+    border-radius: 12px;
+    box-shadow: 0 0 8px 0 rgba(18, 3, 3, 0.3);
+}
+
+p {
+    font-size: medium;
+    margin-left: 30px;
+}
+
