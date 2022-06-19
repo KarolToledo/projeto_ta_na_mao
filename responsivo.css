@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    body {
+        background: #7bddda;
+    }
+
+    .book {
+        width: 260px;
+        height: 350px;
+    }
+
+    .paper {
+        perspective: 1000px;
+    }
+
+    .primeira-pagina,.zeGotinha {
+        width: 150px;
+        height: 180px;  
+    }
+    
+    .min-saude {
+        width: 250px;
+        height: 180px;
+    }
+
+    button {
+        margin: 0;
+    }
+
+    .back-card {
+        padding: 15px;
+        font-size: small;
+    }
+
+    h1 {
+        padding-bottom: 5px;
+    }
+
+    .card {
+        height: 120px;
+        width: 120px;
+        margin: 0 35px 50px 0;
+    }
+        
+}
+
+@media screen and (max-width: 768px) {  CONFIGURAÇÃO PARA TABLET 
+    body {
+        background: rgb(159, 165, 242);
+    }
+
+    .book {
+        width: 290px;
+        height: 400px;
+    }
+
+    .paper {
+        perspective: 1300px;
+    }
+
+    .primeira-pagina,.zeGotinha {
+        width: 230px;
+        height: 280px;  
+    }
+    
+    .min-saude {
+        width: 280px;
+        height: 150px;
+    }
+
+    button {
+        margin: 2px;
+    }
+
+}
+
+@media screen and (min-width: 768px) { 
+    body {
+        background: rgb(159, 165, 242);
+    }
+    
+}
+    

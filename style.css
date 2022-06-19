@@ -19,6 +19,7 @@ body {
     width: 350px;
     height: 500px;
     transition: transform 0.5s;
+
 }
 
 .paper {
@@ -46,7 +47,7 @@ body {
 .front {
     z-index: 1;
     backface-visibility: hidden;
-    border-left: 3px solid powderblue;
+    border-left: 3px solid rgb(22, 148, 165);
 }
 
 .back {
@@ -115,6 +116,9 @@ i {
     height: 200px;
 }
 
-
+img {
+    width: 300px;
+    height: 300px;
+}
 
 
