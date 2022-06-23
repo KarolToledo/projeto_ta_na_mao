@@ -76,3 +76,18 @@ p {
     font-size: medium;
     margin-left: 30px;
 }
+
+.button {
+    margin-left: 80%;
+    width: 80px;
+    height: 35px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sair {
+    color: #fff;
+    font-size: 20px;
+}
