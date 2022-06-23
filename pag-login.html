@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt0br">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="widt=device-widt, initial-scale=1.o">
-    <title>login</title>
-    <link rel="stylesheet" href="pag-login.css">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="widt=device-widt, initial-scale=1.o">
+  <title>login</title>
+  <link rel="stylesheet" href="pag-login.css">
+  <link rel="stylesheet" href="responsivo.css">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
   <div vw class="enabled">
@@ -22,77 +24,59 @@
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
-  
-     <style>
-       .access-button{
-          width: 60% !important;
-          border-radius: 50px !important;
-          border: 5px solid #ffffff !important;
 
-      }
-     </style>
-  <div class="container">
-    <input type="checkbox" id="flip">
-    <div class="cover">
-      <div class="front">
-        <img src="imagens/Logo.jpg" alt="Imagem Login">
-      </div>
-    </div>
-    <div class="forms">
-        <div class="form-content">
-          <div class="login-form">
-            <div class="title">Login</div>
-          <form action="#">
-            <div class="input-boxes">
-              <div class="input-box">
-                <i class="fas fa-at"></i>
-                <input type="text" placeholder="Digite seu email" required>
-              </div>
-              <div class="input-box">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Digite sua senha" required>
-              </div>
-              <div class="text"><a href="#">Esqueceu a senha?</a></div>
-              <div class="button input-box">
-                <input type="submit" value="Enviar">
-              </div>
-              <div class="text sign-up-text">Não tem uma conta? <label for="flip">Inscreva-se agora</label></div>
+  <style>
+    .access-button {
+      width: 60% !important;
+      border-radius: 50px !important;
+      border: 5px solid #ffffff !important;
+    }
+  </style>
+
+  <div class="forms">
+    <div class="form-content">
+      <div class="login-form">
+        <div class="title">Login</div>
+        <form action="#">
+          <div class="input-boxes">
+            <div class="input-box">
+              <i class="fas fa-at"></i>
+              <input type="text" placeholder="Digite seu email" id="email" required>
+
             </div>
+            <div class="input-box">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Digite sua senha" id="senha" required>
+            </div>
+
+            <div class="text"><a href="pag-cadastro.html">Esqueceu a senha?</a></div>
+            <div class="button input-box">
+              <input type="submit" onclick="logar(); return false">
+            </div>
+
+
         </form>
       </div>
-        <div class="signup-form">
-          <div class="title">Inscrever-se</div>
-        <form action="#">
-            <div class="input-boxes">
-              <div class="input-box">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Digite seu nome" required>
-              </div>
-              <div class="input-box">
-                <i class="fas fa-credit-card"></i>
-                <input type="text" placeholder="Cartão do Sus" required>
-              </div>
-              <div class="input-box">
-                <i class="fas fa-female"></i>
-                <input type="text" placeholder="Nome da Mãe" required>
-              </div>
-              <div class="input-box">
-                <i class="fas fa-at"></i>
-                <input type="text" placeholder="Digite seu email" required>
-              </div>
-              <div class="input-box">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Digite sua senha " required>
-              </div>
-              <div class="button input-box">
-                <input type="submit" value="Enviar">
-              </div>
-              <div class="text sign-up-text">Já tem uma conta? <label for="flip">Conecte-se agora</label></div>
-            </div>
-      </form>
-    </div>
-    </div>
+      <script>
+        function logar() {
+
+          var email = document.getElementById('email').value;
+          var senha = document.getElementById('senha').value;
+
+          if (email == "admin" && senha == "admin") {
+            alert('Sucesso');
+            location.href = "carteira_de_vacina.html";
+
+          } else {
+            alert('Usuário ou senha incorretos!!');
+          }
+        }
+
+      </script>
     </div>
   </div>
+  </div>
+  </div>
 </body>
+
 </html>

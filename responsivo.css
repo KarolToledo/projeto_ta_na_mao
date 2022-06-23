@@ -1,54 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 600px) {
-    body {
-        background: #7bddda;
-    }
-
-    .book {
-        width: 260px;
-        height: 350px;
-    }
-
-    .paper {
-        perspective: 1000px;
-    }
-
-    .primeira-pagina,.zeGotinha {
-        width: 150px;
-        height: 180px;  
-    }
-    
-    .min-saude {
-        width: 250px;
-        height: 180px;
-    }
-
-    button {
-        margin: 0;
-    }
-
-    .back-card {
-        padding: 15px;
-        font-size: small;
-    }
-
-    h1 {
-        padding-bottom: 5px;
-    }
-
-    .card {
-        height: 120px;
-        width: 120px;
-        margin: 0 35px 50px 0;
-    }
-        
-}
-
-@media screen and (max-width: 768px) {  CONFIGURAÇÃO PARA TABLET 
-    body {
-        background: rgb(159, 165, 242);
-    }
+@media screen and (max-width: 768px) { 
 
     .book {
         width: 290px;
@@ -74,11 +26,55 @@
     }
 
 }
+    
 
-@media screen and (min-width: 768px) { 
-    body {
-        background: rgb(159, 165, 242);
+@media (max-width: 480px) {
+
+    .book {
+        position: relative;
+        width: 230px;
+        height: 370px;
+        transition: transform 0.5s;
+    }
+
+    .paper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        perspective: 1000px;
+    }
+
+    .primeira-pagina,.zeGotinha {
+        width: 150px;
+        height: 180px;  
     }
     
+    .min-saude {
+        width: 150px;
+        height: 180px;
+    }
+
+    button {
+        margin: 3px;
+    }
+
+    .back-card {
+        padding: 15px;
+        font-size: small;
+    }
+
+    .cabecalho {
+        padding-bottom: 5px;
+        font-size: 10px;
+    }
+
+    .card {
+        height: 120px;
+        width: 120px;
+        margin: 0 35px 50px 0;
+    }
+        
 }
     

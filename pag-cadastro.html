@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="pag-cadastro.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    
+      <style>
+        .access-button {
+          width: 60% !important;
+          border-radius: 50px !important;
+          border: 5px solid #ffffff !important;
+        }
+      </style>
+
+    <div class="input-box">
+        <div class="title">Inscrever-se</div>
+
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Digite seu nome">
+        <br><br>
+    </div>
+    <div class="input-box">
+        <i class="fas fa-credit-card"></i>
+        <input type="text" placeholder="Cartão do Sus">
+        <br><br>
+    </div>
+    <div class="input-box">
+        <i class="fas fa-female"></i>
+        <input type="text" placeholder="Nome da Mãe">
+        <br><br>
+    </div>
+    <div class="input-box">
+        <i class="fas fa-at"></i>
+        <input type="text" placeholder="Digite seu email">
+        <br><br>
+    </div>
+    <div class="input-box">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Digite sua senha ">
+
+    </div>
+    <div class="button input-box">
+        <!-- <input type="submit" value="Enviar">  -->
+        <a href="pag-login.html">
+            <input type="submit" value="Enviar">
+        </a> 
+    </div>
+    
+    <h5 class="text">Já tem uma conta?
+        <a href="index.html" class="conecte-se">Conecte-se agora</a>
+    </h5>
+
+</body>
+
+</html>

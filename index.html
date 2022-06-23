@@ -14,7 +14,25 @@
 </head>
 
 <body>
-    
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <style>
+        .access-button {
+            width: 60% !important;
+            border-radius: 50px !important;
+            border: 5px solid #ffffff !important;
+        }
+    </style>
+
     <button id="prev-btn">
         <i class="fas fa-arrow-circle-left"></i>
     </button>
@@ -40,7 +58,7 @@
         <div id="p2" class="paper">
             <div class="front">
                 <div id="f2" class="front-content">
-                    <a href="pag-login.html" target="_blank">
+                    <a href="pag-cadastro.html">
                         <p>Cadastro</p><br>
                         <img class="zeGotinha" src="imagens/cadastro.png" alt="ícone de cadastro"
                             title="Clique aqui para ir para cadastro">
@@ -63,14 +81,15 @@
                 <div id="f3" class="front-content">
                     <img class="zeGotinha" src="imagens/bandeira-brasil.jpg" alt="Bandeira do Brasil"
                         title="Até a próxima">
+
                 </div>
             </div>
 
             <div class="back">
                 <div id="b3" class="back-content">
-                    <a href="https://bvsms.saude.gov.br/bvs/publicacoes/sus_saude_brasil_3ed.pdf">
+                    <a href="https://www.gov.br/pt-br/noticias/saude-e-vigilancia-sanitaria/ultimas-noticias-saude">
                         <img class="min-saude" src="imagens/ministerio_da_saude.jpg" alt="Logo Minisrério da Saúde"
-                            title="Clique para ver um pouco de história do SUS">
+                            title="Clique para ver notícias de saúde no Brasil">
                     </a>
                 </div>
             </div>
