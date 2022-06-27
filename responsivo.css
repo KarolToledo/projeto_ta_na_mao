@@ -46,14 +46,14 @@
         perspective: 1000px;
     }
 
-    .palavra,.imagembd {
+    .imagem,.imagembd {
         width: 150px;
         height: 150px;  
     }
     
     .min-saude {
         width: 150px;
-        height: 180px;
+        height: 150px;
     }
 
     button {
