@@ -32,8 +32,8 @@
 
     .book {
         position: relative;
-        width: 230px;
-        height: 370px;
+        width: 250px;
+        height: 400px;
         transition: transform 0.5s;
     }
 
