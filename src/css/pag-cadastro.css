@@ -7,6 +7,12 @@
     background:#538bf3;
     padding: 10px 40px;
   }
+
+  .access-button {
+    width: 60% !important;
+    border-radius: 50px !important;
+    border: 5px solid #ffffff !important;
+  }
     
   .title {
     position:static;

@@ -12,6 +12,12 @@ body{
   background:#538bf3;
   padding: 30px;
 }
+
+.access-button {
+  width: 60% !important;
+  border-radius: 50px !important;
+  border: 5px solid #ffffff !important;
+}
 .container .cover::before{
   content: '';
   position: absolute;

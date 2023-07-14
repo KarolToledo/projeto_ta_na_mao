@@ -78,3 +78,17 @@ function goPrevPage() {
         currentLocation--;
     }
 }
+
+function logar() {
+
+    var email = document.getElementById('email').value;
+    var senha = document.getElementById('senha').value;
+
+    if (email == "admin" && senha == "admin") {
+      alert('Sucesso');
+      location.href = "carteira_de_vacina.html";
+
+    } else {
+      alert('Usuário ou senha incorretos!!');
+    }
+  }

@@ -13,6 +13,12 @@ body {
     background-color: rgb(142, 128, 221);
 }
 
+.access-button {
+    width: 60% !important;
+    border-radius: 50px !important;
+    border: 5px solid #ffffff !important;
+}
+
 .book {
     position: relative;
     width: 350px;
